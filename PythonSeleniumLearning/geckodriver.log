@@ -1,0 +1,17 @@
+1694632642896	geckodriver	INFO	Listening on 127.0.0.1:49872
+1694632643254	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/46/gm783045051gxdv153vyjj_h0000gn/T/rust_mozprofileZtfDTN"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694632643595	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1694632643726	Marionette	INFO	Listening on port 49883
+WebDriver BiDi listening on ws://127.0.0.1:49873
+Read port: 49883
+1694632643850	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:49873/devtools/browser/a79fb2dc-c12c-43d6-84be-a502dcfbb802
+JavaScript warning: https://pagead2.googlesyndication.com/bg/cHcu3EGdo_M2vyRVVDr4aifYAmzuFrNOMQiPLv8ePBs.js line 2 > eval line 5718 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://rahulshettyacademy.com/assets/js/jquery.min.js, line 2: Script terminated by timeout at:
+f@https://rahulshettyacademy.com/assets/js/jquery.min.js:2:3686
+
+1694632662248	Marionette	INFO	Stopped listening on port 49883
