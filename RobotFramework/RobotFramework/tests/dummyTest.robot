@@ -64,7 +64,7 @@ Verify all the items in the shop home page
     Fill the login form        ${User_name}      ${Valid_Password}
     Wait for the page to load    ${Home_Page}
     Verify the items in the shop
-    Add Item to Cart        Blackberry
+    Add Item to Cart        Nokia Edge
 
 
 *** Keywords ***
