@@ -4,8 +4,8 @@
 
 *** Settings ***
 Documentation    To validate the login form by passing the data through arguments
-Resource         ./Resources/resource.robot
-Test Teardown    Close Browser
+Resource         ../Resources/resource.robot
+Test Teardown    Close Browser Session
 
 
 *** Variables ***
@@ -35,7 +35,7 @@ Fill the login form
     [Arguments]    ${username}    ${password}
     Input Text        id:username    ${username}
     Input Password    id:password    ${password}
-    Click Button      signIbBtn
+    Click Button      id:signInBtn
 # Here i have passed two arguments so I need to pass 2 arguments in the Testcases with required data.
 
 Wait for the element to display
@@ -49,3 +49,7 @@ Validate the error message
 Validate the home page
     [Arguments]    ${element}
     Element Should Be Visible      ${element}    Home
+
+
+Close Browser Session
+    Close Browser

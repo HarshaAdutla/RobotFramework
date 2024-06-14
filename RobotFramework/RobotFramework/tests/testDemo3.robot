@@ -3,7 +3,7 @@
 *** Settings ***
 Documentation        Verifying all the available items in the shop
 Library              SeleniumLibrary
-Resource             ./Resources/resource2.robot
+Resource             ../Resources/resource2.robot
 
 *** Variables ***
 

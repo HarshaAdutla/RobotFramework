@@ -59,3 +59,4 @@ Add Item to Cart
     Click Button        (//*[@class='card-footer'])[${index}]/button
     Sleep     4s
 
+# In next Script I am going to create another Test case to click on radio buttons and handling dropdowns and alerts.

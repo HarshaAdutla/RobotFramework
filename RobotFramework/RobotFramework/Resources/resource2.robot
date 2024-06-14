@@ -9,8 +9,8 @@ ${Chrome_Driver_Path}       /Users/harsha/PycharmProjects/RobotFramework/RobotFr
 ${URL}                      https://rahulshettyacademy.com/loginpagePractise/
 ${User_name}                rahulshettyacademy
 ${Valid_Password}           learning
-${Home_Page}                .nav-link
-*** Test Cases ***
-
-
-*** Keywords ***
+${Home_Page}                css:.nav-link
+#*** Test Cases ***
+#
+#
+#*** Keywords ***
