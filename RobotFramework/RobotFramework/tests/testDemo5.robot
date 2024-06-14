@@ -5,7 +5,7 @@
 Documentation       Here we are extracting items names and comparing them with expected items names
 Library             SeleniumLibrary
 Library             Collections
-Resource            ./Resources/resource2.robot
+Resource            ../Resources/resource2.robot
 
 
 
@@ -53,8 +53,9 @@ Add Item to Cart
     ${elements} =     Get WebElements        css:.card-title
     ${index} =     Set Variable    1
     FOR    ${element}    IN    @{elements}
-        Exit For Loop If    '${cardName}' ==  '${element.text}'
+        Exit For Loop If    '${cardName}' == '${element.text}'
         ${index} =     Evaluate    ${index} + 1
     END
     Click Button        (//*[@class='card-footer'])[${index}]/button
+    Sleep     4s
 

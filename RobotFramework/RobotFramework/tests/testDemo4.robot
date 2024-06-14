@@ -6,7 +6,7 @@
 Documentation       Here we are extracting items names and comparing them with expected items names
 Library             SeleniumLibrary
 Library             Collections
-Resource            ./Resources/resource2.robot
+Resource            ../Resources/resource2.robot
 
 
 
