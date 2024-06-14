@@ -4,6 +4,7 @@
 Documentation        Verifying all the available items in the shop
 Library              SeleniumLibrary
 Library              Collections
+Library              BuiltIn
 
 
 *** Variables ***
@@ -64,7 +65,7 @@ Verify all the items in the shop home page
     Fill the login form        ${User_name}      ${Valid_Password}
     Wait for the page to load    ${Home_Page}
     Verify the items in the shop
-    Add Item to Cart        Nokia Edge
+    Add Item to Cart        Blackberry
 
 
 *** Keywords ***
@@ -90,8 +91,9 @@ Verify the items in the shop
         Log    ${element.text}
         Append To List     ${actual_List}     ${element.text}
     END
-
     Lists Should Be Equal     ${expected_List}     ${actual_List}
+    Log List    ${actual_List}        # This will write all items in normal formate(1,2,3,..)
+#    Log    The contents of list2 are: @{actual_List}    #This will write all items in List format
 
 
 Add Item to Cart
@@ -100,7 +102,8 @@ Add Item to Cart
     ${index} =     Set Variable    1
     FOR    ${element}    IN    @{elements}
         Log    ${element.text}
-        Exit For Loop If    '${cardName}' ==  '${element.text}'
+        Exit For Loop If    '${cardName}' == '${element.text}'
         ${index} =     Evaluate    ${index} + 1
     END
     Click Button        (//*[@class='card-footer'])[${index}]/button
+    Sleep    4s
